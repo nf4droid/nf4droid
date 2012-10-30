@@ -18,8 +18,8 @@
 	<repositories>
 		<!-- GWT-Higcharts repository (on github) -->
 		<repository>
-			<id>letiro-maven-repo-releases</id>
-			<url>https://github.com/letiro/letiro-maven-repo/raw/master/releases/</url>
+			<id>nf4droid-maven-repo-releases</id>
+			<url>https://github.com/nf4droid/nf4droid-maven-repo/raw/master/releases/</url>
 		</repository>
 		<repository>
 			<id>spring-maven-release</id>
@@ -36,11 +36,11 @@
 			<url>http://maven.springframework.org/external</url>
 			<name>SpringSource Maven Repository - External Releases</name>
 		</repository>
-		<repository>
+<!-- 		<repository>
 			<id>download.krakenapps.org</id>
 			<url>http://download.krakenapps.org/</url>
 			<name>KrakenApps</name>
-		</repository>
+		</repository> -->
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
