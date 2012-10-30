@@ -36,15 +36,24 @@ Configure
 
 - Database
 
-  Please configure the database in the file /main/resources/META-INF/spring/database.properties.
+  Please configure the database in the file 
+  ~~~
+  /main/resources/META-INF/spring/database.properties.
+  ~~~
 
 - GeoIP Database
 
-  Please configure the refeence to the Maxming GeoLite IP Database in the file /main/resources/META-INF/spring/nf4droid.properties.
+  Please configure the path to the Maxming GeoLite IP Database file in the file
+  ~~~
+  /main/resources/META-INF/spring/nf4droid.properties.
+  ~~~
 
 - Logging
 
-  Please configure the log4j logging level in the /main/resources/log4j.properties.
+  Please configure the log4j logging level in the file 
+  ~~~
+  /main/resources/log4j.properties.
+  ~~~
 
 
 Update IP Database
