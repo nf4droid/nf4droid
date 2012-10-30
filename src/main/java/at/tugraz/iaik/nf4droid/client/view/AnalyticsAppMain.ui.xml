@@ -1,0 +1,28 @@
+	<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b='urn:import:com.github.gwtbootstrap.client.ui'
+	xmlns:bi='urn:import:com.github.gwtbootstrap.client.ui.incubator'
+	xmlns:bb='urn:import:com.github.gwtbootstrap.client.ui.base'>
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel>
+		<g:ScrollPanel ui:field="mainPanel">
+			<g:HTMLPanel>
+				<b:Navbar position="TOP" ui:field="navBar">
+					<b:Brand href="#" title="Home">
+						<img src="img/android_robot.png" alt="Home" height="25" width="25" />
+						NF4Droid
+					</b:Brand>
+					<b:Nav ui:field="navWidget"></b:Nav>
+				</b:Navbar>
+				<b:FluidContainer>
+					<g:SimplePanel ui:field="breadcrumb">
+					</g:SimplePanel>
+					<g:SimplePanel ui:field="mainContent">
+					</g:SimplePanel>
+				</b:FluidContainer>
+			</g:HTMLPanel>
+		</g:ScrollPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

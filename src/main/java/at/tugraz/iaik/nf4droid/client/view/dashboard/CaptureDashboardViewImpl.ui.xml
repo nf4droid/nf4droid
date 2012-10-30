@@ -1,0 +1,115 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b='urn:import:com.github.gwtbootstrap.client.ui'
+	xmlns:cd='urn:import:at.tugraz.iaik.nf4droid.client.view.common.bootstrap'>
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel>
+		<b:AlertBlock ui:field="alertBlock" visible="false"
+			animation="true" close="true"></b:AlertBlock>
+		<b:Section target="AppInfo">
+			<!-- <b:PageHeader subtext="Information summary.">App</b:PageHeader> -->
+			<b:Heading size="2" subtext="Information summary.">App</b:Heading>
+			<b:FluidRow>
+				<b:Column size="8">
+					<g:HTMLPanel>
+						<table class="table table-bordered table-striped table-condensed">
+							<thead>
+								<tr>
+									<th>Info</th>
+									<th>Value</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>App name</td>
+									<td>
+										<cd:Span ui:field="appNameField"></cd:Span>
+									</td>
+								</tr>
+								<tr>
+									<td>App package</td>
+									<td>
+										<cd:Span ui:field="appPackageField"></cd:Span>
+									</td>
+								</tr>
+								<tr>
+									<td>App version code</td>
+									<td>
+										<cd:Span ui:field="appVersionCodeField"></cd:Span>
+									</td>
+								</tr>
+								<tr>
+									<td>App version name</td>
+									<td>
+										<cd:Span ui:field="appVersionNameField"></cd:Span>
+									</td>
+								</tr>
+								<tr>
+									<td>Link to Google Play</td>
+									<td>
+										<g:Anchor ui:field="marketLink" target="_blank"><img alt="Android app on Google Play"
+       src="http://www.android.com/images/brand/android_app_on_play_logo_small.png" /></g:Anchor>
+									</td>
+								</tr>
+								<tr>
+									<td>Total traffic</td>
+									<td>
+										<cd:Span ui:field="totalTrafficField"></cd:Span>
+									</td>
+								</tr>
+								<tr>
+									<td>Possible exposures</td>
+									<td>
+										 <b:Label ui:field="exposureCountLabel" type="WARNING"></b:Label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</g:HTMLPanel>
+				</b:Column>
+				<b:Column size="4">
+					<b:WellNavList>
+						<cd:NavHeaderWithIcon icon="BAR_CHART"
+							text="Further Visualizations"></cd:NavHeaderWithIcon>
+						<b:NavLink ui:field="trafficTimelineLink">Traffic Timeline</b:NavLink>
+						<b:NavLink ui:field="countryMapLink">Connection Country Map</b:NavLink>
+						<b:Divider />
+						<cd:NavHeaderWithIcon icon="LIST_ALT" text="Tables"></cd:NavHeaderWithIcon>
+						<b:NavLink ui:field="httpRequestsLink">HTTP Requests</b:NavLink>
+<!-- 						<b:NavLink>TCP Connections</b:NavLink> -->
+					</b:WellNavList>
+				</b:Column>
+			</b:FluidRow>
+		</b:Section>
+		<b:Section target="ExposeBarChart">
+			<!-- <b:PageHeader subtext="Amount of data exposure.">Expose</b:PageHeader> -->
+			<b:Heading size="2" subtext="Amount of possible data exposure.">Expose</b:Heading>
+			<b:FluidRow>
+				<b:Column size="12">
+					<b:Well ui:field="dataExposureBarChartArea">
+					</b:Well>
+				</b:Column>
+			</b:FluidRow>
+		</b:Section>
+		<b:Section target="TrafficPieCharts">
+			<!-- <b:PageHeader subtext="Network traffic amount ratios.">Traffic</b:PageHeader> -->
+			<b:Heading size="2" subtext="Network traffic amount ratios.">Traffic</b:Heading>
+			<b:FluidRow>
+				<b:Column size="4">
+					<b:Well ui:field="leftPieChartArea">
+					</b:Well>
+				</b:Column>
+				<b:Column size="4">
+					<b:Well ui:field="centerPieChartArea">
+					</b:Well>
+				</b:Column>
+				<b:Column size="4">
+					<b:Well ui:field="rightPieChartArea">
+					</b:Well>
+				</b:Column>
+			</b:FluidRow>
+		</b:Section>
+	</g:HTMLPanel>
+</ui:UiBinder> 

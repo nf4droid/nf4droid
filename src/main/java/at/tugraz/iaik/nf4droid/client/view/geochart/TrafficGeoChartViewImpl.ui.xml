@@ -1,0 +1,43 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b='urn:import:com.github.gwtbootstrap.client.ui'
+	xmlns:cd='urn:import:at.tugraz.iaik.nf4droid.client.view.common.bootstrap'>
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel>
+		<b:AlertBlock ui:field="alertBlock" visible="false"
+			animation="true" close="true"></b:AlertBlock>
+		<b:Section target="TrafficGeoChart">
+			<b:Heading size="2" subtext="Traffic country map for IPv4.">Traffic geochart</b:Heading>
+			<b:FluidRow>
+				<b:Column size="9">
+					<b:Well ui:field="trafficGeoChartArea">
+					</b:Well>
+				</b:Column>
+				<b:Column size="3">
+					<b:Well>
+						<dl>
+							<dt>
+								<b:Label type="INFO">Info</b:Label>
+							</dt>
+							<dd>
+								<cd:Span ui:field="totalText"></cd:Span>
+							</dd>
+						</dl>
+					</b:Well>
+					<b:Well ui:field="unknownWarning">
+						<dl>
+							<dt>
+								<b:Label type="WARNING">Warning!</b:Label>
+							</dt>
+							<dd>
+								<cd:Span ui:field="warningText"></cd:Span>
+							</dd>
+						</dl>
+					</b:Well>
+				</b:Column>
+			</b:FluidRow>
+		</b:Section>
+	</g:HTMLPanel>
+</ui:UiBinder> 

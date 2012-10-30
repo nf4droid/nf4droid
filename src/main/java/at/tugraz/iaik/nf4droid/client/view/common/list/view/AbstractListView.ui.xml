@@ -1,0 +1,37 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:b='urn:import:com.github.gwtbootstrap.client.ui'
+	xmlns:cd='urn:import:at.tugraz.iaik.nf4droid.client.view.common.bootstrap'>
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel ui:field="htmlPanel">
+		<b:AlertBlock ui:field="alertBlock" visible="false"
+			animation="true" close="true"></b:AlertBlock>
+		<b:FluidRow>
+			<b:Column ui:field="optionsArea" size="3">
+			</b:Column>
+			<b:Column size="5">
+			</b:Column>
+			<b:Column size="4">
+					<b:AppendButton>
+						<b:TextBox ui:field="searchTextBox" searchQuery="true"
+							placeholder="search..." />
+						<b:Button ui:field="submitSearchButton" icon="SEARCH"
+							iconSize="LARGE" title="Submit search"></b:Button>
+						<b:Button ui:field="clearSearchButton" icon="REMOVE"
+							iconSize="LARGE" title="Clear search"></b:Button>
+					</b:AppendButton>
+
+			</b:Column>
+		</b:FluidRow>
+		<b:FluidRow>
+			<b:Column size="12">
+				<b:CellTable ui:field='table' stylePrimaryName="table table-striped contentTable"></b:CellTable>
+				<b:Pagination ui:field="pagination" />
+				<cd:Span ui:field="rowCountInfo"></cd:Span>
+			</b:Column>
+		</b:FluidRow>
+	</g:HTMLPanel>
+</ui:UiBinder> 

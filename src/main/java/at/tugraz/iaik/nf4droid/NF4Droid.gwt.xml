@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 1.6.4//EN" "http://google-web-toolkit.googlecode.com/svn/tags/1.6.4/distro-source/core/src/gwt-module.dtd">
+<module>
+	<inherits name="com.google.gwt.user.User"/>
+	<inherits name="com.google.gwt.activity.Activity"/>
+	<inherits name="com.google.gwt.place.Place"/>
+	<inherits name="com.google.web.bindery.requestfactory.RequestFactory"/>
+	<inherits name="com.google.gwt.user.cellview.CellView"/>
+	<inherits name="com.google.gwt.inject.Inject"/>
+	
+	<!-- Google visualization API -->
+	<inherits name='com.google.gwt.visualization.Visualization'/>
+	
+	<!-- Include GWTUpload library -->
+  	<inherits name="gwtupload.GWTUpload"/>
+  	
+  	<!-- Include GWT Highcharts library -->
+  	<inherits name="org.moxieapps.gwt.highcharts.Highcharts"/>
+  	
+  	<!-- Include GWT Bootstrap library -->
+  	<inherits name="com.github.gwtbootstrap.Bootstrap" />
+  	
+  	<source casesensitive="true" defaultexcludes="yes" path="at/tugraz/iaik/nf4droid/client/service/requestfactory/request"/>
+    <source casesensitive="true" defaultexcludes="yes" path="at/tugraz/iaik/nf4droid/client/service/requestfactory/proxy"/>
+    <source casesensitive="true" defaultexcludes="yes" path="client"/>
+	<source casesensitive="true" defaultexcludes="yes" path="shared"/>
+	<public casesensitive="true" defaultexcludes="yes" path="public"/>
+	
+	<!--UiBinder Configuration -->
+	<set-configuration-property name="UiBinder.useSafeHtmlTemplates" value="true"/>
+	
+	<entry-point class="at.tugraz.iaik.nf4droid.client.NF4Droid"/>
+</module>

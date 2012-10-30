@@ -1,0 +1,38 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b='urn:import:com.github.gwtbootstrap.client.ui' xmlns:cd='urn:import:at.tugraz.iaik.nf4droid.client.view.common.bootstrap'>
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel>
+		<b:AlertBlock ui:field="alertBlock" visible="false"
+			animation="true" close="true"></b:AlertBlock>
+		<b:Section target="TrafficTimeline">
+			<b:Heading size="2" subtext="Traffic amount and data exposure visualization.">Traffic timeline</b:Heading>
+			<b:FluidRow>
+				<b:Column size="9">
+					<b:Well ui:field="trafficTimelineChartArea">
+					</b:Well>
+				</b:Column>
+				<b:Column size="3">
+					<b:Well>
+						<g:FlexTable stylePrimaryName="table" ui:field="legendTable" />
+						<b:Button ui:field="addFilteredSeriesButton" icon="PLUS"
+							iconSize="DEFAULT" title="Add filtered search" text="Add filtered series"></b:Button>
+					</b:Well>
+				</b:Column>
+			</b:FluidRow>
+		</b:Section>
+		<b:Section target="ExposeList">
+			<b:Heading size="2" subtext="List of possible data exposure.">Expose</b:Heading>
+			<b:FluidRow>
+				<b:Column size="12">
+					<b:CellTable ui:field='exposeTable'
+						stylePrimaryName="table table-striped contentTable"></b:CellTable>
+					<b:Pagination ui:field="exposeTablePagination" />
+					<cd:Span ui:field="exposeRowCountInfo"></cd:Span>
+				</b:Column>
+			</b:FluidRow>
+		</b:Section>
+	</g:HTMLPanel>
+</ui:UiBinder> 
