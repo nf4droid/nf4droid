@@ -10,10 +10,25 @@ Build
 ========
 Use maven to build project with the following goals:
 
-mvn compile 	- compile sources
-mvn clean		- clean build
-mvn package		- create apache tomcat webapp war file
-mvn gwt:run		- run webapp in gwt development mode using jetty
+* compile sources
+~~~
+mvn compile 
+~~~
+
+* clean build
+~~~
+mvn clean
+~~~
+
+* create apache tomcat webapp war file
+~~~
+mvn package
+~~~
+
+* run webapp in gwt development mode using jetty
+~~~
+mvn gwt:run	
+~~~
 
 
 Configure
@@ -21,15 +36,15 @@ Configure
 
 - Database
 
-Please configure the database in the file /main/resources/META-INF/spring/database.properties.
+  Please configure the database in the file /main/resources/META-INF/spring/database.properties.
 
 - GeoIP Database
 
-Please configure the refeence to the Maxming GeoLite IP Database in the file /main/resources/META-INF/spring/nf4droid.properties.
+  Please configure the refeence to the Maxming GeoLite IP Database in the file /main/resources/META-INF/spring/nf4droid.properties.
 
 - Logging
 
-Please configure the log4j logging level in the /main/resources/log4j.properties.
+  Please configure the log4j logging level in the /main/resources/log4j.properties.
 
 
 Update IP Database
